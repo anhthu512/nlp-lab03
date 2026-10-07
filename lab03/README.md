@@ -1,7 +1,5 @@
 # LAB 03 - Word Representations and Embeddings
 
-Thư mục này bám theo toàn bộ yêu cầu trong W3. Notebook chỉ chứa code và output máy sinh ra; các câu trả lời thuộc nhóm bị cấm dùng AI được làm bằng tay, scan thành PDF và liên kết trong bốn file Markdown tương ứng.
-
 ## Cách chạy
 
 1. Đặt `c4-train.00000-of-01024-30K.json.gz` ở thư mục cha của `lab03/`.
@@ -24,19 +22,7 @@ Thiết lập chính: 10.000 documents từ C4, seed 42, tokenizer tiếng Anh n
 | 24 | Semantic search cho query `medical treatment` | notebook, `results.csv` |
 | 25 | Sinh candidate và evidence từ corpus để người học tự chọn 3 đúng + 3 sai/bất ngờ | notebook, `results.csv` |
 
-Thứ tự trong notebook bám theo số mục của đề: **10 Experiment 1 -> 11 Core implementation -> 17 Experiment 2 -> 18 Inspect embeddings -> 19 Experiment 3 -> 20 Experiment 4 -> 21-22 Evaluation -> 24 Application -> 25 Error analysis -> 30 lưu deliverables**. Các mục 12-16, 23, 26-29 là câu hỏi lý thuyết/tính tay hoặc quy định nên được chuyển sang các bản scan thay vì tạo Markdown answer cell trong notebook.
-
-## Phần phải tự viết tay, không dùng AI
-
-| Nhóm | Cần dùng output để nhận xét/phân tích? | File chèn bản scan |
-|---|---|---|
-| Co-occurrence vectors; hai bài cosine; CBOW/Skip-gram training examples; phép tính analogy giả định | **Không**. Làm trước khi chạy/xem output | `calculations.md` |
-| Prediction của Bài 3 và Prediction 1-4, đủ Prediction/Reason/Confidence | **Không**. Phải khóa câu trả lời trước calculation/experiment | `prediction.md` |
-| So sánh Experiment 1; giải thích Top-5; window; dimension; word-pair ranking; analogy; 3 đúng + 3 sai/bất ngờ | **Có**. Dùng bảng/output và corpus evidence trong notebook/CSV | `error_analysis.md` |
-| Ý nghĩa cosine; đối chiếu Bài 3; sparse/dense; ma trận 100k; CBOW vs Skip-gram; analogy tính tay; polysemy; bảng representation; `bank`; individual check | Chủ yếu **không**; chỉ mục đối chiếu prediction tùy chọn dùng output | `reflection.md` |
-| Individual learning check | **Không bắt buộc dùng output**; chuẩn bị trả lời miệng cá nhân khoảng 3 phút | Không có file nộp riêng trong đề |
-
-Tên PDF scan dự kiến: `calculations_scan.pdf`, `prediction_scan.pdf`, `error_analysis_scan.pdf`, `reflection_scan.pdf`. Sau khi scan, đặt bốn file cạnh các `.md`; liên kết đã được chuẩn bị sẵn.
+Thứ tự trong notebook bám theo số mục của đề: **10 Experiment 1 -> 11 Core implementation -> 17 Experiment 2 -> 18 Inspect embeddings -> 19 Experiment 3 -> 20 Experiment 4 -> 21-22 Evaluation -> 24 Application -> 25 Error analysis -> 30 lưu deliverables**.
 
 ## Deliverables
 
@@ -44,12 +30,10 @@ Tên PDF scan dự kiến: `calculations_scan.pdf`, `prediction_scan.pdf`, `erro
 - `calculations.md`
 - `prediction.md`
 - `cooccurrence.py`
-- `word_embedding.ipynb` (đã chạy, có output)
+- `word_embedding.ipynb`
 - `results.csv`
 - `error_analysis.md`
 - `reflection.md`
-
-Không nộp các model nhị phân vì đề không yêu cầu và notebook có thể train lại từ corpus gốc.
 
 ## AI assistance statement
 
